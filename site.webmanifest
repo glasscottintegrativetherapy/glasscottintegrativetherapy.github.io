@@ -1,0 +1,9 @@
+{
+  "name": "Glasscott Integrative Therapy",
+  "short_name": "Glasscott Therapy",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf8f1",
+  "theme_color": "#3f5c52",
+  "icons": []
+}
