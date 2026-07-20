@@ -867,6 +867,6 @@ details p {
   }
 
   .hero-card-content {
-    transform: translateY(115px);
+    display: none;
   }
 }
