@@ -860,3 +860,12 @@ details p {
     animation-iteration-count: 1 !important;
   }
 }
+@media (max-width: 768px) {
+  .hero-card {
+    min-height: 560px;
+  }
+
+  .hero-card-content {
+    transform: translateY(135px);
+  }
+}
