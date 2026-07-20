@@ -301,13 +301,27 @@ h3 {
 }
 
 .hero-card {
-  .hero-card-photo {
+.hero-card {
+  position: relative;
+  min-height: 440px;
+  display: grid;
+  align-content: end;
+  overflow: hidden;
+  border: 1px solid rgba(94, 120, 110, 0.18);
+  border-radius: 34px;
+  padding: 1.15rem;
+  background: linear-gradient(155deg, #dce7e1 0%, #f5f0e6 60%, #e2d3bf 100%);
+  box-shadow: var(--shadow);
+}
+
+.hero-card-photo {
   position: absolute;
   inset: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 25%;
+  object-position: center 20%;
 }
 
 .hero-card::before,
@@ -316,58 +330,16 @@ h3 {
 }
 
 .hero-card-content {
-  margin-top: auto;
-}
-  position: relative;
-  min-height: 440px;
-  display: grid;
-  align-content: end;
-  overflow: hidden;
-  border: 1px solid rgba(94, 120, 110, 0.18);
-  border-radius: 34px;
- padding: 1.15rem;
-  background:
-    radial-gradient(circle at 72% 24%, rgba(255,255,255,0.92) 0 8%, transparent 9%),
-    radial-gradient(circle at 24% 30%, rgba(255,255,255,0.7) 0 4%, transparent 5%),
-    linear-gradient(155deg, #dce7e1 0%, #f5f0e6 60%, #e2d3bf 100%);
-  box-shadow: var(--shadow);
-}
-
-.hero-card::before {
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 340px;
-  right: -35px;
-  bottom: -32px;
-  border: 2px solid rgba(63, 92, 82, 0.30);
-  border-radius: 55% 45% 50% 50% / 40% 60% 40% 60%;
-  transform: rotate(-13deg);
-}
-
-.hero-card::after {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 260px;
-  right: 54px;
-  bottom: -45px;
-  border-left: 3px solid rgba(63, 92, 82, 0.36);
-  border-radius: 50%;
-  transform: rotate(20deg);
-}
-
-.hero-card-content {
   position: relative;
   z-index: 1;
   max-width: 23rem;
-  border: 1px solid rgba(255,255,255,0.58);
+  margin-top: auto;
+  border: 1px solid rgba(255, 255, 255, 0.58);
   border-radius: 18px;
   padding: 1.25rem;
-  background: rgba(255,255,255,0.76);
+  background: rgba(255, 255, 255, 0.76);
   backdrop-filter: blur(12px);
 }
-
 .hero-card-content strong {
   display: block;
   margin-bottom: 0.25rem;
