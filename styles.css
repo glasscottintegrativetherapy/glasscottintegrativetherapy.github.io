@@ -349,7 +349,6 @@ h3 {
   padding: 1.25rem;
   background: rgba(255,255,255,0.76);
   backdrop-filter: blur(12px);
-  transform: translateY(90px);
 }
 
 .hero-card-content strong {
